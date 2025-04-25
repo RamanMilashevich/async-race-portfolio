@@ -1,0 +1,192 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.garage {
+  padding: 1rem;
+}
+
+.car-list {
+  margin-top: 1rem;
+  margin-bottom: 20px;
+}
+
+.car-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: flex-start;
+}
+
+.car-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.car-wrapper.winner {
+  border: 3px solid gold;
+  animation: winnerGlow 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes winnerGlow {
+  from {
+    box-shadow: 0 0 10px 2px gold;
+  }
+  to {
+    box-shadow: 0 0 20px 4px gold;
+  }
+}
+
+.winner-modal {
+  z-index: 9999 !important;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+  animation: popIn 0.3s ease-out;
+}
+
+@keyframes popIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.modal-content h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 8px 16px;
+  border: none;
+  background: gold;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.garage-view {
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.car-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.car-svg-wrapper{
+  padding-top: 5px;
+}
+
+.car-buttons {
+  display: flex;
+  gap: 3px;
+  padding-top: 10px;
+}
+
+.car-buttons button {
+ padding: 2px 13px;
+}
+
+.car-road {
+  position: relative;
+  height: 4px;
+  background: repeating-linear-gradient(
+    to right,
+    #555 0px,
+    #555 10px,
+    #777 10px,
+    #777 20px
+  );
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 2px;
+  margin: 0;
+}
+
+.car-wrapper{
+  position: relative;
+  width: 100%;   
+  padding-bottom: 8px;
+}
+
+.road-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.flag {
+  position: absolute;
+  right: 0;
+  top: -40px;
+  right: 20%;
+  width: 30px;
+  height: 30px;
+}
+
+.winners-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.winners-table th,
+.winners-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.winners-table th {
+  background-color: #ececec;
+  font-weight: bold;
+  color: #333;
+}
+
+.winners-table tr:last-child td {
+  border-bottom: none;
+}
+
+.winners-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.pagination {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+}

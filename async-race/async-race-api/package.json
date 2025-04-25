@@ -1,0 +1,29 @@
+{
+  "name": "async-race-api",
+  "version": "1.0.0",
+  "description": "Fun with promises",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "mikhama",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.30.1",
+    "@typescript-eslint/parser": "^8.30.1",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "json-server": "^0.16.3",
+    "typescript": "^5.8.3",
+    "webpack": "^5.99.5",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.1"
+  },
+  "keywords": [],
+  "dependencies": {
+    "axios": "^1.8.4",
+    "dotenv": "^16.5.0",
+    "portfinder": "^1.0.36"
+  }
+}
