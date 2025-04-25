@@ -487,7 +487,7 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.1"
   },
-  "homepage": "https://rolling-scopes-school.github.io/ramanmilashevich-JSFEEN2024Q4",
+  "homepage": "https://github.com/RamanMilashevich/async-race-portfolio",
   "scripts": {
     "dev": "concurrently \"npm run start-backend\" \"npm run start-frontend\"",
     "start-backend": "node async-race-api/index.js",
